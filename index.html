@@ -15,21 +15,61 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
 
-        <!-- font awesome CDN -->
-        <script src="https://kit.fontawesome.com/6132f5beef.js" crossorigin="anonymous"></script>
-
-        <style>
-            .font-poppins{
-                font-family: "Poppins", serif;
+    <!-- font awesome CDN -->
+    <script src="https://kit.fontawesome.com/6132f5beef.js" crossorigin="anonymous"></script>
+    <!-- customization -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'bton-primary': '#E76F51',
+              }
             }
-        </style>
+          }
+        }
+      </script>
+
+    <style>
+        .font-poppins {
+            font-family: "Poppins", serif;
+        }
+       
+    </style>
 </head>
 
 <body class="font-poppins">
-   <button class="btn btn-primary font-poppins">Login</button><br>
-   <i class="fa-regular text-amber-400 fa-address-card"></i>
+    <!-- header section -->
+    <header class=" bg-[#264653]">
+        <nav class="lg:container mx-auto">
+            <div class="navbar ">
+                <div class="navbar-start">
+                 <a class=" text-white hover:scale-110 btn btn-ghost font-bold text-2xl">Biker Zone</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu text-white menu-horizontal px-1">
+                    <li class="hover:scale-110"><a>Home</a></li>
+                    <li class="hover:scale-110"><a>Shop</a></li>
+                    <li class="hover:scale-110"><a>News</a></li>
+                    <li class="hover:scale-110"><a>Contact</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end">
+                  <a class="btn hidden lg:flex bg-bton-primary">Login</a>
+                  <a href=""><i class="fa-solid flex text-white font-bold text-2xl pr-3 lg:hidden fa-bars"></i></a>
+                </div>
+              </div>
+        </nav>
+    </header>
+    <!-- main section -->
+    <main>
 
-   <h1>Hello, I am Nazmul Hasan</h1>
+    </main>
+    <!-- footer section -->
+    <footer>
+
+    </footer>
 </body>
 
 </html>
